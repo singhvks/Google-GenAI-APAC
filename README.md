@@ -72,5 +72,5 @@ adk deploy cloud_run \
 ```
 
 ## Documentation
-- [System Design Document](system%20design%20doc.md)
-- [Deployment Steps](Deployment%20Steps.md)
+- [System Design Document](./System%20Design.md)
+- [Deployment Steps](./Deployment%20Steps.md)
