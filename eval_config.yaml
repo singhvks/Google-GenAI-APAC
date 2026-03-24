@@ -1,0 +1,23 @@
+# ADK Evaluation Configuration
+
+# Evaluation criteria to use
+evaluation:
+  criteria:
+    - name: response_match_score
+      weight: 0.4
+    - name: tool_trajectory_avg_score
+      weight: 0.6
+
+# Datasets for evaluation
+datasets:
+  - name: food_explorer_basics
+    samples:
+      - input: "What is the most famous dish in Osaka?"
+        expected_tools: ["wikipedia", "add_prompt_to_state"]
+        expected_response: "The most famous dish in Osaka is Takoyaki (octopus balls) and Okonomiyaki."
+      - input: "Tell me about the geography of Lyon."
+        expected_tools: ["wikipedia", "add_prompt_to_state"]
+        expected_response: "Lyon is located in east-central France at the confluence of the rivers Rhône and Saône."
+
+# Output directory for evaluation results
+output_dir: ./eval_results
